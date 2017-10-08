@@ -11,9 +11,9 @@ class StudentController extends Controller
         return 'Show form to collect all info from a student.';
     }
 
-    public function checkAnswer()
+    public function checkResults()
     {
-        return 'Will will check answer later. Redirect to results will follow.';
+        return 'We will check results later. Redirect to results will follow.';
         #redirect to results;
     }
 }

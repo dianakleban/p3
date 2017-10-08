@@ -14,4 +14,4 @@
 ///Route::get('/', 'WelcomeController');
 
 Route::get('/', 'StudentController@index');
-Route::get('/check-answer', 'StudentController@checkAnswer');
+Route::get('/check-results', 'StudentController@checkResults');
