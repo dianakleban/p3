@@ -13,5 +13,12 @@
 
 ///Route::get('/', 'WelcomeController');
 
+Route::get('/env', function () {
+    dump(config('app.name'));
+    dump(config('app.env'));
+    dump(config('app.debug'));
+    dump(config('app.url'));
+});
+
 Route::get('/', 'StudentController@index');
 Route::get('/check-results', 'StudentController@checkResults');
