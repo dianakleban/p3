@@ -8,7 +8,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        return 'Show form to collect all info from a student.';
+        return view('student.index');
     }
 
     public function checkResults()
@@ -16,4 +16,11 @@ class StudentController extends Controller
         return 'We will check results later. Redirect to results will follow.';
         #redirect to results;
     }
+
+    /*public function show($title = null)
+    {
+    	dump($title);
+    	return view('student.index')->with(['title'=>$title]);
+    }*/
+
 }
