@@ -1,4 +1,4 @@
-﻿body
+body
 {
 	margin: 0 auto;
 	text-align: left;
@@ -8,12 +8,10 @@
 	background-color: lightblue;
 }
 
-
-/*#wrapper
+#wrapper
 {
 	width: 90%;
 	margin: 0 auto;
-	background-color: white;
 }
 
 header
@@ -21,96 +19,55 @@ header
 	text-align: center;
 }
 
-header h1
-{
-  background-color: #000040;
-  background-repeat:no-repeat;
-  color: white;
-  padding-top: 1.1em;
-  padding-bottom: 1.1em;
-  font-size: 1.8em;
-  margin-bottom: 2px;
-}*/
-
 h1, h2, h3, h4
 {
-    font-family: Times New Roman, Arial, sans-serif;
-    color: Navy;
+	font-family: Times New Roman, Arial, sans-serif;
+	color: Navy;
 
 }
 
 h1
 {
-    font-size: 1.8em !important;
+	font-size: 1.8em !important;
+}
+
+h2
+{
+	display: none;
+}
+
+section
+{
+	font-size: 110%;
+	padding-left: 290px
 
 }
 
-
 #imgId
 {
-  /*  margin-top: 15%;
-    margin-left: 12%;*/
-		margin-top: 5px;
-    border-radius: 15%;
-		width: 200px;
+	margin-top: 5px;
+	border-radius: 15%;
+	width: 120px;
+	vertical-align: middle;
 }
 
 
 p
 {
-    padding-right: 20px;
-    text-align: justify;
-    padding-left: 10px;
+	padding-right: 20px;
+	text-align: justify;
+	padding-left: 10px;
 }
 
-/*aside
-{
-	width: 30%;
-	margin-right: 2%;
-	clear: left;
-	float: left;
-	background-color: Silver;
-	height: 750px;
-}
-
-article
-{
-	width: 68%;
-	float: right;
-	font-size: 110%;
-}
-
-article h2{
-	display: none;
-}
-
-hr
-{
-		display: block;
-		margin: 0px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: gray;
-    vertical-align: top;
-
-}
 
 footer
 {
-	clear: both;
-}*/
-
-footer
-{
-
-
 	margin: 120px auto 2px auto;
 	text-align: center;
 	background-color: #000040;
 	color: White;
 	height: 30px;
 	padding-top: 5px;
-
 }
 
 
@@ -120,7 +77,6 @@ footer
 	font-weight: bold;
 }
 
-/*form info*/
 fieldset
 {
 	border:  solid navy;
@@ -140,55 +96,79 @@ legend
 
 .req
 {
-    color: red;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 7px;
-    font-size: 90%;
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 7px;
+	font-size: 90%;
 }
 
- .reqMsg
-{
-    color: #B30000;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 7px;
-}
-
-/*.yourNm
+.reqMsg, .reqInfo
 {
 	color: #B30000;
 	font-weight: bold;
+	font-style: italic;
+}
+
+.reqInfo
+{
+	padding-left: 15px;
+	font-size: 14px;
+}
+
+.yourNm
+{
+	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
 
 .msg
 {
-    display: none;
-    color: navy;
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 7px;
+	display: none;
+	color: navy;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 7px;
 }
 
 .alert
 {
 	margin-top: 15px;
-	color: navy;
+	color: white;
 	background-color: orange;
-	width: 90%;
 	font-weight: bold;
 	padding-bottom: 5px;
 	padding: 5px;
-
+	width: 625px;
 }
 
 .welcome
 {
 	margin-top: 15px;
-	color: navy;
-	background-color: lightblue;
-	width: 90%;
-	font-weight: bold;
+	color: white;
+	background-color:#008080;
 	padding: 5px;
+	width: 625px;
 
-}*/
+}
+.error
+{
+    list-style-type:none;
+    text-align:left;
+		padding-left: 10px;
+		margin: 0;
+    font-size:1rem;
+    font-style:italic;
+		color: #B30000;
+		font-weight: bold;
+}
+
+.subBtn
+{
+	background-color: #000040;
+	color: white;
+	padding: 5px;
+	margin-left: 7px;
+	border-radius: 15%;
+}
