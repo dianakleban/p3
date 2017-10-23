@@ -39,7 +39,9 @@ h2
 section
 {
 	font-size: 110%;
-	padding-left: 290px
+	display: block;
+	width: 50%;
+	margin: 0 auto;
 
 }
 

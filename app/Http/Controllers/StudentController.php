@@ -9,7 +9,7 @@ class StudentController extends Controller
 
     public function create(Request $request)
     {
-      //dump(session('name'));
+
       return view('student.index')->with([
         'name'=>session('name'),
         'email'=>session('email'),
@@ -22,10 +22,13 @@ class StudentController extends Controller
     {
       //validation
       //str_replace(' ', '', $value)
-      //$newName = str_replace(' ', '',$request->input('name'));
-    //dump($newName);
+    /*  $messages = [
+        'regex:/^[\pL\s\-]+$/u'=> 'The :attribute may only contain letters and spaces.',
+        #'required'=>'Dont forget the :attribute field'
+      ];*/
+
       $this->validate($request, [
-        'name' => 'required|alpha|min:2',
+        'name' => 'required|min:2|regex:/^[\pL\s\-]+$/u',
         'email'=> 'required|email',
         'lang'=> 'required'
       ]);
