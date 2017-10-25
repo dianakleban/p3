@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class StudentController extends Controller
 {
 
-    public function create(Request $request)
+    public function index(Request $request)
     {
 
       return view('student.index')->with([
@@ -21,14 +21,8 @@ class StudentController extends Controller
     public function store(Request $request)
     {
       //validation
-      //str_replace(' ', '', $value)
-    /*  $messages = [
-        'regex:/^[\pL\s\-]+$/u'=> 'The :attribute may only contain letters and spaces.',
-        #'required'=>'Dont forget the :attribute field'
-      ];*/
-
       $this->validate($request, [
-        'name' => 'required|min:2|regex:/^[\pL\s\-]+$/u',
+        'name' => 'required|regex:/^[\pL\s\-]+$/u',
         'email'=> 'required|email',
         'lang'=> 'required'
       ]);
@@ -43,13 +37,9 @@ class StudentController extends Controller
           'email'=>$email,
           'comments'=>$comments,
           'lang'=>$lang
-        ]);
+        ])->withInput();
 
     }
-    /*public function index()
-    {
-        return view('student.index');
-    }*/
 
     //code for previous week, will delete later
     public function checkResults()

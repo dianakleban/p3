@@ -11,9 +11,7 @@
 |
 */
 
-//Route::get('/student/create', 'StudentController@create');
-//Route::post('/student', 'StudentController@store');
-Route::get('/', 'StudentController@create');
+Route::get('/', 'StudentController@index');
 Route::post('/student', 'StudentController@store');
 
 //previous week's code, will delete later
