@@ -41,11 +41,11 @@ class StudentController extends Controller
 
   }
 
-  //code for previous week, will delete later
+  /*code for previous week, will delete later
   public function checkResults()
   {
     return 'We will check results later. Redirect to results will follow.';
     #redirect to results;
-  }
+  }*/
 
 }
