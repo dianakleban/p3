@@ -16,8 +16,7 @@ Route::post('/student', 'StudentController@store');
 
 //previous week's code, will delete later
 //Route::get('/', 'StudentController@index');
-Route::get('/check-results', 'StudentController@checkResults');
-Route::get('/countries', 'StudentController@showCountries');
+//Route::get('/check-results', 'StudentController@checkResults');
 
 Route::get('/env', function () {
     dump(config('app.name'));

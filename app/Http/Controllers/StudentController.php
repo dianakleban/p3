@@ -48,18 +48,4 @@ class StudentController extends Controller
     #redirect to results;
   }
 
-public function showCountries()
-{
-  $countries = [
-    'Canada',
-    'Mexico',
-    'USA',
-    'Dominican Republic', 'Russia'
-  ];
-
-  return view ('student.countries')->with([
-    'countries'=>$countries
-  ]);
-}
-
 }
